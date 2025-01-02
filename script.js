@@ -23,8 +23,8 @@ window.addEventListener('load', () => {
 function loadSong(indexNumb) {
     songName.innerText = musicList[indexNumb - 1].name;
     artistName.innerText = musicList[indexNumb - 1].artist;
-    currentSongImg.src = `/assets/images/${musicList[indexNumb - 1].img}.png`;
-    mainSong.src = `/assets/audio/${musicList[indexNumb - 1].src}.mp3`
+    currentSongImg.src = `./assets/images/${musicList[indexNumb - 1].img}.png`;
+    mainSong.src = `./assets/audio/${musicList[indexNumb - 1].src}.mp3`
 }
 
 playPause.addEventListener('click', () => {
